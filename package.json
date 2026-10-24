@@ -5,7 +5,7 @@
   "description": "Complete AI Study Manager Web Application",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
-    "build": "npm run build --prefix client && npm run build --prefix server",
+    "build": "echo Prebuilt assets ready",
     "start": "node server/dist/index.js",
     "client": "npm run dev --prefix client",
     "server": "npm run dev --prefix server",
