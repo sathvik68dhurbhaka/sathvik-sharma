@@ -37,7 +37,7 @@ app.use('/api/auth/login', authLimiter);
 app.use('/api/auth/register', authLimiter);
 app.use('/api/ai', aiLimiter);
 // Health Check
-app.get('/api/health', (req, res) => {
+app.get(['/api/health', '/health'], (req, res) => {
     res.json({
         status: 'ok',
         service: 'AI Study Manager API',
@@ -46,9 +46,13 @@ app.get('/api/health', (req, res) => {
 });
 // API Routes
 app.use('/api/auth', authRouter);
-app.use('/api', academicRouter);
+app.use('/auth', authRouter);
 app.use('/api/ai', aiRouter);
+app.use('/ai', aiRouter);
 app.use('/api/admin', adminRouter);
+app.use('/admin', adminRouter);
+app.use('/api', academicRouter);
+app.use('/', academicRouter);
 // Serve static frontend assets
 const clientDist = path.resolve(__dirname, '../../client/dist');
 app.use(express.static(clientDist));

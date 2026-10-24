@@ -17,8 +17,10 @@ import {
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const DATA_DIR = path.resolve(__dirname, '../../data');
+const isVercel = Boolean(process.env.VERCEL);
+const DATA_DIR = isVercel ? '/tmp' : path.resolve(__dirname, '../../data');
 const DB_FILE = path.join(DATA_DIR, 'db.json');
+const BUNDLED_DB = path.resolve(__dirname, '../../data/db.json');
 
 export interface DatabaseSchema {
   users: User[];
@@ -58,17 +60,29 @@ class Database {
 
   private load(): DatabaseSchema {
     try {
-      if (!fs.existsSync(DATA_DIR)) {
-        fs.mkdirSync(DATA_DIR, { recursive: true });
-      }
-      if (fs.existsSync(DB_FILE)) {
-        const raw = fs.readFileSync(DB_FILE, 'utf-8');
-        return { ...defaultSchema, ...JSON.parse(raw) };
+      if (isVercel) {
+        if (fs.existsSync(DB_FILE)) {
+          const raw = fs.readFileSync(DB_FILE, 'utf-8');
+          return { ...defaultSchema, ...JSON.parse(raw) };
+        }
+        if (fs.existsSync(BUNDLED_DB)) {
+          const raw = fs.readFileSync(BUNDLED_DB, 'utf-8');
+          const parsed = JSON.parse(raw);
+          this.saveImmediate(parsed);
+          return { ...defaultSchema, ...parsed };
+        }
+      } else {
+        if (!fs.existsSync(DATA_DIR)) {
+          fs.mkdirSync(DATA_DIR, { recursive: true });
+        }
+        if (fs.existsSync(DB_FILE)) {
+          const raw = fs.readFileSync(DB_FILE, 'utf-8');
+          return { ...defaultSchema, ...JSON.parse(raw) };
+        }
       }
     } catch (err) {
       console.error('[DB] Error loading database file, initializing defaults:', err);
     }
-    this.saveImmediate(defaultSchema);
     return defaultSchema;
   }
 
