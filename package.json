@@ -2,6 +2,7 @@
   "name": "ai-study-manager",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Complete AI Study Manager Web Application",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
