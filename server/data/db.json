@@ -1,0 +1,510 @@
+{
+  "users": [
+    {
+      "id": "1160c2d0-bc7a-48ce-9186-8f7f0f4c17ae",
+      "name": "System Administrator",
+      "email": "admin@aistudymanager.com",
+      "passwordHash": "40a60d0b9aff40dffde6b594efbcafd0:1ae7f0ed4d172156acefa9724d8ad03d03bfee45e7e94f57d60a0d2fbe23d55d9d099af97f7fe49943e2f594d85f79493b7a0048ec429a3938e667795df18f21",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-09-24T12:52:32.079Z",
+      "lastLoginAt": "2026-10-24T14:40:07.154Z",
+      "weeklyGoalHours": 0,
+      "notificationPreferences": {
+        "browserEnabled": true,
+        "inAppEnabled": true,
+        "reminderMinutesBefore": 15
+      }
+    },
+    {
+      "id": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "name": "Alex Rivera",
+      "email": "student@example.com",
+      "passwordHash": "97b4a3186629a01560b98727d32121c5:21de0f4d3bf514af5757e599c9b682a541ee71841d086c3dcddb80b204fca54c2c7fca5e05f95cd91b9c2ae9fe7ac7b021b3d5d7b15777eecb086a72486c0b2c",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-10-10T12:52:32.161Z",
+      "lastLoginAt": "2026-10-24T15:08:05.141Z",
+      "weeklyGoalHours": 18,
+      "gradeLevel": "Undergraduate Computer Science & Mathematics",
+      "timezone": "America/New_York",
+      "notificationPreferences": {
+        "browserEnabled": true,
+        "inAppEnabled": true,
+        "reminderMinutesBefore": 15
+      }
+    },
+    {
+      "id": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "name": "sathvik",
+      "email": "sathvik68dhurbhaka@gmail.com",
+      "passwordHash": "76cfd4d61cef51a85da8ee0866360b43:f72cc5a0956ea8c9b2aca157f17dc2f91f6c1151e6ae07b18430708536feb3f527b072f24f2ed3f62e480333343a2fa7c67d2f28479c4e023cf926473823837d",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-10-24T14:34:52.784Z",
+      "lastLoginAt": "2026-10-24T14:34:52.784Z",
+      "weeklyGoalHours": 15,
+      "notificationPreferences": {
+        "browserEnabled": false,
+        "inAppEnabled": true,
+        "reminderMinutesBefore": 15
+      }
+    }
+  ],
+  "subjects": [
+    {
+      "id": "a1054ca6-5d83-4003-a4c9-7f94665b0280",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "name": "Calculus III",
+      "code": "MATH-201",
+      "color": "#F97316",
+      "targetHoursPerWeek": 5,
+      "topics": [
+        "Multivariable Limits",
+        "Partial Derivatives",
+        "Double & Triple Integrals",
+        "Green's Theorem"
+      ],
+      "createdAt": "2026-10-24T12:52:32.161Z"
+    },
+    {
+      "id": "13921c56-cc25-4a7f-86dd-c6e55df41439",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "name": "Data Structures & Algorithms",
+      "code": "CS-210",
+      "color": "#EA580C",
+      "targetHoursPerWeek": 6,
+      "topics": [
+        "Binary Search Trees",
+        "Graph Traversal (BFS/DFS)",
+        "Dynamic Programming",
+        "Dijkstra Algorithm"
+      ],
+      "createdAt": "2026-10-24T12:52:32.161Z"
+    },
+    {
+      "id": "e676a216-925d-4fc1-aff1-d99ef6c38ff9",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "name": "University Physics II",
+      "code": "PHYS-150",
+      "color": "#C2410C",
+      "targetHoursPerWeek": 4,
+      "topics": [
+        "Electric Fields",
+        "Gauss's Law",
+        "Capacitance & Dielectrics",
+        "Magnetic Induction"
+      ],
+      "createdAt": "2026-10-24T12:52:32.161Z"
+    },
+    {
+      "id": "88f2e90b-140a-432c-a8c3-b98cc65d1a7c",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "name": "Modern World History",
+      "code": "HIST-105",
+      "color": "#78716C",
+      "targetHoursPerWeek": 3,
+      "topics": [
+        "Industrial Revolution",
+        "World War I Alliances",
+        "The Cold War Era"
+      ],
+      "createdAt": "2026-10-24T12:52:32.161Z"
+    }
+  ],
+  "studySessions": [
+    {
+      "id": "501401f5-3ac8-41e5-9473-90d671c6cacc",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "a1054ca6-5d83-4003-a4c9-7f94665b0280",
+      "subjectName": "Calculus III",
+      "topic": "Partial Derivatives & Chain Rule",
+      "date": "2026-10-22",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "durationMinutes": 90,
+      "actualMinutesCompleted": 90,
+      "priority": "high",
+      "status": "completed",
+      "completedAt": "2026-10-22T11:30:00Z",
+      "createdAt": "2026-10-24T12:52:32.162Z"
+    },
+    {
+      "id": "49514d78-5b9a-4867-bb47-ab4c480cb483",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "13921c56-cc25-4a7f-86dd-c6e55df41439",
+      "subjectName": "Data Structures & Algorithms",
+      "topic": "Graph BFS and DFS Implementation",
+      "date": "2026-10-23",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "durationMinutes": 90,
+      "actualMinutesCompleted": 90,
+      "priority": "urgent",
+      "status": "completed",
+      "completedAt": "2026-10-23T15:30:00Z",
+      "createdAt": "2026-10-24T12:52:32.162Z"
+    },
+    {
+      "id": "d8ac94e0-d34a-414a-9b46-dc88958e5324",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "a1054ca6-5d83-4003-a4c9-7f94665b0280",
+      "subjectName": "Calculus III",
+      "topic": "Double Integrals in Polar Coordinates",
+      "date": "2026-10-24",
+      "startTime": "09:00",
+      "endTime": "10:30",
+      "durationMinutes": 90,
+      "actualMinutesCompleted": 90,
+      "priority": "high",
+      "status": "completed",
+      "completedAt": "2026-10-24T10:30:00Z",
+      "createdAt": "2026-10-24T12:52:32.162Z"
+    },
+    {
+      "id": "313df001-6754-4b83-b34c-928b8c34c9af",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "e676a216-925d-4fc1-aff1-d99ef6c38ff9",
+      "subjectName": "University Physics II",
+      "topic": "Electric Potential & Gauss Law Problem Sets",
+      "date": "2026-10-24",
+      "startTime": "16:00",
+      "endTime": "17:30",
+      "durationMinutes": 90,
+      "actualMinutesCompleted": 0,
+      "priority": "medium",
+      "status": "scheduled",
+      "createdAt": "2026-10-24T12:52:32.162Z"
+    },
+    {
+      "id": "ce337472-edf7-485b-b764-3a7f9e6e94b5",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "13921c56-cc25-4a7f-86dd-c6e55df41439",
+      "subjectName": "Data Structures & Algorithms",
+      "topic": "Dijkstra Shortest Path Algorithm",
+      "date": "2026-10-25",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "durationMinutes": 90,
+      "actualMinutesCompleted": 0,
+      "priority": "high",
+      "status": "scheduled",
+      "createdAt": "2026-10-24T12:52:32.162Z"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "a37b0c5e-3a86-4865-add7-6e9c0ec9a958",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "a1054ca6-5d83-4003-a4c9-7f94665b0280",
+      "subjectName": "Calculus III",
+      "title": "Problem Set 4: Multivariable Integrals",
+      "description": "Complete textbook exercises 14.1 through 14.4. Show all integration step derivations.",
+      "dueDate": "2026-10-27",
+      "dueTime": "23:59",
+      "priority": "urgent",
+      "status": "in_progress",
+      "notes": "Need to review polar coordinate transformations first.",
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "ea222810-1129-4697-bb81-600469a236b5",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "13921c56-cc25-4a7f-86dd-c6e55df41439",
+      "subjectName": "Data Structures & Algorithms",
+      "title": "Programming Assignment 2: Graph Pathfinding",
+      "description": "Implement A* search and Dijkstra algorithm on a city grid. Submit via GitHub repository.",
+      "dueDate": "2026-10-29",
+      "dueTime": "17:00",
+      "priority": "high",
+      "status": "not_started",
+      "links": [
+        "https://cs-portal.university.edu/assignments/2"
+      ],
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "982302b5-69c2-4963-b284-9326adb71cdd",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "subjectId": "88f2e90b-140a-432c-a8c3-b98cc65d1a7c",
+      "subjectName": "Modern World History",
+      "title": "Cold War Primary Source Analysis Essay",
+      "description": "1,500 word critical essay comparing diplomatic memos from the 1962 missile crisis.",
+      "dueDate": "2026-10-22",
+      "dueTime": "23:59",
+      "priority": "medium",
+      "status": "completed",
+      "completedAt": "2026-10-22T21:00:00Z",
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "9c51a13c-917b-4b4f-83bd-353adb9b6c1b",
+      "userId": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "subjectId": "general",
+      "subjectName": "os",
+      "title": "sia 1",
+      "description": "",
+      "dueDate": "2026-10-27",
+      "dueTime": "23:59",
+      "priority": "urgent",
+      "status": "completed",
+      "notes": "",
+      "links": [],
+      "createdAt": "2026-10-24T14:37:12.024Z",
+      "completedAt": "2026-10-24T14:37:35.620Z"
+    }
+  ],
+  "goals": [
+    {
+      "id": "edabfdd0-33ae-4d7b-bbb4-2f8ae0f32fe2",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Achieve Grade A in Calculus III Midterm",
+      "subjectId": "a1054ca6-5d83-4003-a4c9-7f94665b0280",
+      "subjectName": "Calculus III",
+      "targetDate": "2026-10-29",
+      "category": "grade",
+      "targetValue": 95,
+      "currentValue": 88,
+      "unit": "%",
+      "completed": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "f44a5e08-e215-449a-92b3-4949ed5a33c0",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Complete 50 LeetCode Medium Graph Problems",
+      "subjectId": "13921c56-cc25-4a7f-86dd-c6e55df41439",
+      "subjectName": "Data Structures & Algorithms",
+      "targetDate": "2026-10-29",
+      "category": "milestone",
+      "targetValue": 50,
+      "currentValue": 32,
+      "unit": "problems",
+      "completed": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "bb0f565d-bede-4c2f-befb-9c53f902d3f8",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Review Calculus Formula Sheet for Quiz",
+      "dateTime": "2026-10-24T18:00:00",
+      "type": "revision",
+      "isCompleted": false,
+      "isDismissed": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "945c9898-2d47-4965-a152-8618d6d2b7d2",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Submit Lab Report for Physics II",
+      "dateTime": "2026-10-25T14:00:00",
+      "type": "assignment",
+      "isCompleted": false,
+      "isDismissed": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "f63cc59e-7fa6-4e36-b1fd-6d65005c942d",
+      "userId": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "title": "Assignment Due: sia 1",
+      "dateTime": "2026-10-27T23:59:00",
+      "type": "assignment",
+      "relatedId": "9c51a13c-917b-4b4f-83bd-353adb9b6c1b",
+      "isCompleted": false,
+      "isDismissed": false,
+      "createdAt": "2026-10-24T14:37:12.024Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "d1553b55-4036-485e-ada5-a0c0bae4a553",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Welcome to AI Study Manager!",
+      "message": "Your personal academic workspace is ready. Explore your timetable, track assignments, and ask the AI Tutor any subject question.",
+      "type": "info",
+      "isRead": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    },
+    {
+      "id": "deca285c-1878-4915-a04d-75387422c777",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "title": "Upcoming Assignment Deadline",
+      "message": "Problem Set 4: Multivariable Integrals is due in 3 days.",
+      "type": "warning",
+      "link": "/assignments",
+      "isRead": false,
+      "createdAt": "2026-10-24T12:52:32.163Z"
+    }
+  ],
+  "tutorConversations": [
+    {
+      "id": "9db8ef8c-79a8-4590-b4bf-8f22a24c8ace",
+      "userId": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "title": "hi",
+      "mode": "general",
+      "createdAt": "2026-10-24T14:35:22.125Z",
+      "updatedAt": "2026-10-24T14:35:22.125Z"
+    },
+    {
+      "id": "b1967452-d71e-4818-86a7-29d9a0300564",
+      "userId": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "title": "Explain Green's Theorem with an intu...",
+      "mode": "general",
+      "createdAt": "2026-10-24T14:36:23.272Z",
+      "updatedAt": "2026-10-24T14:36:23.272Z"
+    }
+  ],
+  "tutorMessages": [
+    {
+      "id": "74a1239d-2a7c-4cad-8a94-6cd64c4b97de",
+      "conversationId": "9db8ef8c-79a8-4590-b4bf-8f22a24c8ace",
+      "role": "user",
+      "content": "hi",
+      "createdAt": "2026-10-24T14:35:22.125Z"
+    },
+    {
+      "id": "938687ff-531d-482e-b251-837c14cd2373",
+      "conversationId": "b1967452-d71e-4818-86a7-29d9a0300564",
+      "role": "user",
+      "content": "Explain Green's Theorem with an intuitive physical example.",
+      "createdAt": "2026-10-24T14:36:23.272Z"
+    }
+  ],
+  "authAuditLogs": [
+    {
+      "id": "c2a5f294-e58b-4447-bf9f-6eff159c817b",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T12:58:15.608Z"
+    },
+    {
+      "id": "2b4dcfc4-eab8-4cb0-9108-c01383645289",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T13:50:35.618Z"
+    },
+    {
+      "id": "0942d505-ebdc-44b6-a7ba-a90c1b7c616c",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T13:52:11.004Z"
+    },
+    {
+      "id": "7798cf84-f857-4b58-9f12-69d76dfd7356",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T13:54:13.440Z"
+    },
+    {
+      "id": "4f944d7f-31f1-494f-931d-f8968ababd42",
+      "userId": "1160c2d0-bc7a-48ce-9186-8f7f0f4c17ae",
+      "email": "admin@aistudymanager.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as admin",
+      "timestamp": "2026-10-24T13:54:59.853Z"
+    },
+    {
+      "id": "369d760c-1d38-499f-8ac2-ba851938eef0",
+      "userId": "d9d17731-a895-443d-b3f4-408511bc643b",
+      "email": "sathvik68dhurbhaka@gmail.com",
+      "eventType": "register",
+      "status": "success",
+      "ip": "::ffff:127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "description": "Student account registered successfully",
+      "timestamp": "2026-10-24T14:34:52.784Z"
+    },
+    {
+      "id": "2289cfa0-5224-43b5-b84a-39720330b601",
+      "userId": "1160c2d0-bc7a-48ce-9186-8f7f0f4c17ae",
+      "email": "admin@aistudymanager.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::ffff:127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "description": "Successful login as admin",
+      "timestamp": "2026-10-24T14:40:07.154Z"
+    },
+    {
+      "id": "c4663d63-0aa3-47f3-ba28-0c15cd442aa3",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T15:01:55.206Z"
+    },
+    {
+      "id": "0005589b-9833-448f-a6ce-c6f2c5e8a098",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T15:03:43.268Z"
+    },
+    {
+      "id": "643f3907-c8f1-4e54-af64-06bb3d48dbb7",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T15:04:36.009Z"
+    },
+    {
+      "id": "f6f40724-4c85-4b8c-bbe1-59e3deeff97d",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T15:05:34.233Z"
+    },
+    {
+      "id": "2135a916-adce-42dc-b728-5ef6493b83cb",
+      "userId": "df16892c-a258-4f7c-98ca-258d4fcb65b1",
+      "email": "student@example.com",
+      "eventType": "login_success",
+      "status": "success",
+      "ip": "::1",
+      "userAgent": "node",
+      "description": "Successful login as student",
+      "timestamp": "2026-10-24T15:08:05.141Z"
+    }
+  ],
+  "adminAuditLogs": []
+}
