@@ -96,6 +96,13 @@ async function start() {
   });
 }
 
-start().catch(err => {
-  console.error('Fatal initialization error:', err);
-});
+if (!process.env.VERCEL) {
+  start().catch(err => {
+    console.error('Fatal initialization error:', err);
+  });
+} else {
+  seedDatabase().catch(() => {});
+}
+
+export default app;
+export { app };

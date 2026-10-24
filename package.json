@@ -11,6 +11,13 @@
     "server": "npm run dev --prefix server",
     "seed": "npm run seed --prefix server"
   },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.1"
+  },
   "devDependencies": {
     "concurrently": "^8.2.2"
   }
